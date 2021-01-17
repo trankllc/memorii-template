@@ -25,7 +25,7 @@ class ListingDetailsBreadcrumb extends Component {
     }
 
     state = {
-        title: 'Tasty Hand-Pulled Noodles',
+        title: '店舗の情報',
         stitle: '101 East Parkview Road, New York',
         shareLinks: [
             {
@@ -95,7 +95,7 @@ class ListingDetailsBreadcrumb extends Component {
                                         <p className="breadcrumb__desc">
                                             <span className="la d-inline-block"><GiPositionMarker /></span> {this.state.stitle}
                                         </p>
-                                        <ul className="listing-info mt-3 mb-3">
+                                        {/* <ul className="listing-info mt-3 mb-3">
                                             <li>
                                                 <div className="theme-btn average-symble" data-toggle="tooltip" data-placement="top" title="Pricey">
                                                     <span className="average-active">$$$</span>$$
@@ -114,8 +114,8 @@ class ListingDetailsBreadcrumb extends Component {
                                                     <i className="d-inline-block"><GiChickenOven /></i> Eat & Drink
                                                 </span>
                                             </li>
-                                        </ul>
-                                        <ul className="listing-info">
+                                        </ul> */}
+                                        {/* <ul className="listing-info">
                                             <li>
                                                 <button type="button" className="theme-btn border-0">
                                                     <i className="d-inline-block"><RiBookmarkLine /></i> save
@@ -142,7 +142,7 @@ class ListingDetailsBreadcrumb extends Component {
                                                     <span className="d-inline-block"><FaRegMoneyBillAlt /></span> reserve a seat
                                                 </Link>
                                             </li>
-                                        </ul>
+                                        </ul> */}
                                     </div>
                                     <div className="report-list-items">
                                         <ul className="listing-info">

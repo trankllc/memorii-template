@@ -3410,7 +3410,7 @@ body {
     hero-wrapper
  ====================================================*/
 .hero-wrapper {
-  background-image: url("../images/hero-bg.jpg");
+  background-image: url("../images/home-cover.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

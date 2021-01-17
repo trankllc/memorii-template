@@ -7,28 +7,28 @@ class FooterCategoryWidget extends Component {
         links: [
             {
                 path: '#',
-                text: 'Shops'
+                text: '検索'
             },
             {
                 path: '#',
-                text: 'Hotels'
+                text: 'コンタクト'
             },
-            {
-                path: '#',
-                text: 'Restaurants'
-            },
-            {
-                path: '#',
-                text: 'Bars'
-            },
-            {
-                path: '#',
-                text: 'Events'
-            },
-            {
-                path: '#',
-                text: 'Fitness'
-            }
+            // {
+            //     path: '#',
+            //     text: 'Restaurants'
+            // },
+            // {
+            //     path: '#',
+            //     text: 'Bars'
+            // },
+            // {
+            //     path: '#',
+            //     text: 'Events'
+            // },
+            // {
+            //     path: '#',
+            //     text: 'Fitness'
+            // }
         ]
     }
     render() {

@@ -9,12 +9,12 @@ import authorimg from '../../../assets/images/testi-img2.jpg';
 class WidgetAuthor extends Component {
     state = {
         authorImg: authorimg,
-        authorName: 'Mark Williamson',
+        authorName: '店舗名',
         date: 'Posted 3 Days ago',
-        address: '101 Parkview, New York',
-        email: 'example@gmail.com',
-        number: '+7(111)123456789',
-        website: 'www.techydevs.com',
+        address: '住所',
+        email: 'メール',
+        number: '電話番号',
+        website: 'リンク',
         websiteUrl: 'https://techydevs.com',
         socials: [
             {
@@ -89,11 +89,11 @@ class WidgetAuthor extends Component {
                             )
                         })}
                     </ul>
-                    <div className="btn-box text-center">
+                    {/* <div className="btn-box text-center">
                         <Button text="view Profile" url="/user-profile" className="d-block">
                             <span className="d-inline-block"><AiOutlineUser /></span>
                         </Button>
-                    </div>
+                    </div> */}
                 </div>
             </>
         );

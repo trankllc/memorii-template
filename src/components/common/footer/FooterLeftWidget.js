@@ -6,7 +6,7 @@ import logosrc from '../../../assets/images/logo2.png'
 class FooterLeftWidget extends Component {
     state = {
         logo: logosrc,
-        desc: 'Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros',
+        desc: '私たちはこのサイト以外にもサービスを展開しています。ご依頼等あればご気軽にご連絡下さい。',
     }
     render() {
         return (
@@ -18,7 +18,7 @@ class FooterLeftWidget extends Component {
                             <p className="footer__desc">
                                 {this.state.desc}
                             </p>
-                            <SocialProfile />
+                            {/* <SocialProfile /> */}
                         </div>
                     </div>
                 </div>

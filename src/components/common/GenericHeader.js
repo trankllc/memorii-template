@@ -51,62 +51,62 @@ const shortby = [
 ]
 
 class GenericHeader extends Component {
-    state = {
-        selectedCatOp: null,
-        title: 'Showing 1 to 6 of 30 entries',
-        navs: [
-            {
-                path: '/listing-list',
-                icon: <BsListUl />,
-                active: false,
-            },
-            {
-                path: '/listing-grid',
-                icon: <BsGrid />,
-                active: true,
-            }
-        ],
+  state = {
+    selectedCatOp: null,
+    title: 'Showing 1 to 6 of 30 entries',
+    navs: [
+      {
+        path: '/listing-list',
+        icon: <BsListUl />,
+        active: false,
+      },
+      {
+        path: '/listing-grid',
+        icon: <BsGrid />,
+        active: true,
+      }
+    ],
 
-    }
+  }
 
-    handleChangeshortby = () => {
-        const { selectedShortby } = this.state;
-        this.setState(
-            { selectedShortby }
-        );
-    }
-    render() {
-        return (
-            <>
-                <div className="generic-header margin-bottom-30px">
-                    <p className="showing__text text-left">
-                        {this.state.title}
-                    </p>
-                    <div className="short-option mr-3">
-                        <Select
-                            value={this.selectedShortby}
-                            onChange={this.handleChangeshortby}
-                            placeholder="Short by"
-                            options={shortby}
-                        />
-                    </div>
-                    <ul className="generic-nav">
-                        {this.state.navs.map((item, index) => {
-                            return (
-                                <li key={index}>
-                                    <Link to={item.path} className={ item.active ? 'active': ' '}>
-                                        <span className="d-inline-block">
-                                            {item.icon}
-                                        </span>
-                                    </Link>
-                                </li>
-                            )
-                        })}
-                    </ul>
-                </div>
-            </>
-        );
-    }
+  handleChangeshortby = () => {
+    const { selectedShortby } = this.state;
+    this.setState(
+      { selectedShortby }
+    );
+  }
+  render() {
+    return (
+      <>
+        <div className="generic-header margin-bottom-30px">
+          <p className="showing__text text-left">
+            {this.state.title}
+          </p>
+          <div className="short-option mr-3">
+            <Select
+              value={this.selectedShortby}
+              onChange={this.handleChangeshortby}
+              placeholder="Short by"
+              options={shortby}
+            />
+          </div>
+          <ul className="generic-nav">
+            {this.state.navs.map((item, index) => {
+              return (
+                <li key={index}>
+                  <Link to={item.path} className={ item.active ? 'active': ' '}>
+                    <span className="d-inline-block">
+                      {item.icon}
+                    </span>
+                  </Link>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
+      </>
+    );
+  }
 }
 
 export default GenericHeader;

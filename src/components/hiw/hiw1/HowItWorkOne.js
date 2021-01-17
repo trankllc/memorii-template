@@ -11,11 +11,11 @@ class HowItWorkOne extends Component {
                 </div>
 
                 {/* Video */}
-                <div className="row">
+                {/* <div className="row">
                     <div className="col-lg-8 mx-auto padding-top-30px">
                         <HowItWorkOneVideo />
                     </div>
-                </div>
+                </div> */}
             </>
         );
     }

@@ -18,7 +18,7 @@ import Footer from "../../components/common/footer/Footer";
 import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 
 
-import bannerimg from '../../assets/images/hero-bg3.jpg';
+import bannerimg from '../../assets/images/home-cover.jpg';
 import team1 from '../../assets/images/testi-img1.jpg';
 import team2 from '../../assets/images/testi-img2.jpg';
 import team3 from '../../assets/images/testi-img3.jpg';

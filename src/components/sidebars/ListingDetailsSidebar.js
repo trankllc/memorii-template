@@ -11,32 +11,32 @@ import WidgetFollow from "./widgets/WidgetFollow";
 import { BsCheckCircle } from 'react-icons/bs'
 
 class ListingDetailsSidebar extends Component {
-    state = {
-        btnText: 'Verified Listing',
-        btnIcon: <BsCheckCircle />
-    }
-    render() {
-        return (
-            <>
-                <div className="author-verified-badge margin-bottom-20px">
-                    <div className="author__verified-badge" data-toggle="tooltip" data-placement="top" title="Listing has been verified and belongs the business owner or manager">
-                        <span className="d-inline-block">{this.state.btnIcon}</span> {this.state.btnText}
-                    </div>
-                </div>
-                <div className="sidebar section-bg">
-                    <WidgetAuthor />
-                    <WidgetStaticsInfo />
-                    <WidgetBooking />
-                    <WidgetOpenHours />
-                    <WidgetCategory />
-                    <WidgetTags />
-                    <WidgetSimilarListing />
-                    <WidgetSubscribe />
-                    <WidgetFollow />
-                </div>
-            </>
-        );
-    }
+	state = {
+		btnText: 'Verified Listing',
+		btnIcon: <BsCheckCircle />
+	}
+	render() {
+		return (
+			<>
+				{/* <div className="author-verified-badge margin-bottom-20px">
+					<div className="author__verified-badge" data-toggle="tooltip" data-placement="top" title="Listing has been verified and belongs the business owner or manager">
+						<span className="d-inline-block">{this.state.btnIcon}</span> {this.state.btnText}
+					</div>
+				</div> */}
+				<div className="sidebar section-bg">
+					<WidgetAuthor />
+					{/* <WidgetStaticsInfo /> */}
+					{/* <WidgetBooking /> */}
+					<WidgetOpenHours />
+					{/* <WidgetCategory /> */}
+					<WidgetTags />
+					<WidgetSimilarListing />
+					{/* <WidgetSubscribe /> */}
+					{/* <WidgetFollow /> */}
+				</div>
+			</>
+		);
+	}
 }
 
 export default ListingDetailsSidebar;

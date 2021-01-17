@@ -20,7 +20,7 @@ class UserProfile extends Component {
                 <GeneralHeader />
 
                 {/* Breadcrumb */}
-                <Breadcrumb CurrentPgTitle="User Profile" MenuPgTitle="Pages"  img={this.states.BreadcrumbImg} />
+                <Breadcrumb CurrentPgTitle="会社情報" MenuPgTitle="Pages"  img={this.states.BreadcrumbImg} />
 
                 <section className="user-profile-area padding-top-40px padding-bottom-100px">
                     <div className="container">

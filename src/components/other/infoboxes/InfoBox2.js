@@ -10,19 +10,19 @@ class InfoBox2 extends Component {
             {
                 active: false,
                 icon: <BsMap />,
-                title: 'Great Places',
+                title: 'サイト作成',
                 description: 'There are many variations of passages of Lorem Ipsum available.'
             },
             {
                 active: false,
                 icon: <GiChickenOven />,
-                title: 'Great Restaurants',
+                title: 'マーケティング',
                 description: 'There are many variations of passages of Lorem Ipsum available.'
             },
             {
                 active: false,
                 icon: <RiHotelBedLine />,
-                title: 'Great Hotels',
+                title: 'データまとめ等',
                 description: 'There are many variations of passages of Lorem Ipsum available.'
             },
             {

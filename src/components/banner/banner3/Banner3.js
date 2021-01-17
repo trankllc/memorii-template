@@ -12,7 +12,7 @@ function Banner3({bgImg}) {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="hero-heading">
-                                <SectionsHeading title="What's Your Plan Today?" desc="All the top locations – from restaurants and clubs, to galleries, famous places and more..." />
+                                <SectionsHeading title="自分に合う美容院を見つけよう!" desc="希望のエリアとスタイルを選択して店舗を見つけられます。" />
                             </div>
 
                             <Banner3Tab />
