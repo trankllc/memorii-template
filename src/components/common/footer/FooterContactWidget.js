@@ -4,8 +4,9 @@ import { FiHeadphones } from 'react-icons/fi'
 import { FaRegEnvelope } from 'react-icons/fa'
 
 class FooterContactWidget extends Component {
+    // TODO 内容を変える
     state = {
-        title: 'Contact With Us',
+        title: 'お問い合わせ',
         lists: [
             {
                 icon: <AiOutlineHome />,
@@ -17,7 +18,7 @@ class FooterContactWidget extends Component {
             },
             {
                 icon: <FaRegEnvelope />,
-                text: 'dirto@gmail.com'
+                text: 'memorii@gmail.com'
             }
         ]
     }

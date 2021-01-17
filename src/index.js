@@ -1,8 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router } from "react-router-dom";
-import { createBrowserHistory } from "history";
-
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
@@ -10,13 +7,18 @@ import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './assets/css/style.css';
 import './App.css';
+import configureStore, { history } from "./store";
+import { ConnectedRouter } from "connected-react-router";
+import { Provider } from 'react-redux';
 
-const history = createBrowserHistory();
+const store = configureStore();
 
 ReactDOM.render(
-  <Router history={history}>
-    <App />
-  </Router>,
+  <Provider store={store}>
+      <ConnectedRouter history={history}>
+        <App />
+     </ConnectedRouter>
+  </Provider>,
   document.getElementById('root')
 );
 

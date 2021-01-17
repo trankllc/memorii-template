@@ -4,6 +4,7 @@ import SocialProfile from "../../other/account/SocialProfile";
 import logosrc from '../../../assets/images/logo2.png'
 
 class FooterLeftWidget extends Component {
+    // TODO LOGO のスタイルを変える
     state = {
         logo: logosrc,
         desc: '私たちはこのサイト以外にもサービスを展開しています。ご依頼等あればご気軽にご連絡下さい。',

@@ -17,15 +17,15 @@ class Footer extends Component {
           <div className="box-icon"></div>
           <div className="box-icon"></div>
           <div className="container">
-            <div className="row">
+            <div className="row footer-row">
               <FooterLeftWidget />
-              <FooterQuickLinkWidget />
-              <FooterCategoryWidget />
+              {/* <FooterQuickLinkWidget /> */}
+              {/* <FooterCategoryWidget /> */}
               <FooterContactWidget />
             </div>
 
             {/* Copyright */}
-            <Copyright />
+            {/* <Copyright /> */}
           </div>
         </section>
       </>

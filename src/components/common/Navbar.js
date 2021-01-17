@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FiChevronDown } from 'react-icons/fi'
+import { FaHome, FaQuestionCircle, FaSearch } from 'react-icons/fa'
 import { Link } from "react-router-dom";
 import $ from 'jquery';
 
@@ -20,26 +20,26 @@ export default function Navbar() {
         <nav>
           <ul>
             <li>
-              <Link to="/">ホーム<FiChevronDown /></Link>
-              <ul className="dropdown-menu-item">
+              <Link to="/"><FaHome className="nav-li-icon" /> ホーム</Link>
+              {/* <ul className="dropdown-menu-item">
                 <li><Link to="/">home one</Link></li>
-                {/* <li><Link to="/index2">home two</Link></li>
+                <li><Link to="/index2">home two</Link></li>
                 <li><Link to="/index3">home three</Link></li>
                 <li><Link to="/index4">home four </Link></li>
-                <li><Link to="/index5">home five </Link></li> */}
-              </ul>
+                <li><Link to="/index5">home five </Link></li>
+              </ul> */}
             </li>
             <li>
-              <Link to="/all-categories">検索<FiChevronDown /></Link>
-              <ul className="dropdown-menu-item">
+              <Link to="/all-categories"><FaSearch className="nav-li-icon" />検索</Link>
+              {/* <ul className="dropdown-menu-item">
                 <li><Link to="/">home one</Link></li>
                 <li><Link to="/list-left-sidebar">left sidebar  </Link></li>
                 <li><Link to="/listing-details">listing details</Link></li>
                 <li><Link to="/user-profile">user profile</Link></li>
-                {/* <li><Link to="/all-categories">all categories</Link></li>
+                <li><Link to="/all-categories">all categories</Link></li>
                 <li><Link to="/all-locations">all locations</Link></li>
-                <li><Link to="/top-place">top places </Link></li> */}
-              </ul>
+                <li><Link to="/top-place">top places </Link></li>
+              </ul> */}
             </li>
             {/* <li>
               <Link to="/listing-grid">カテゴリー<FiChevronDown /></Link>
@@ -74,16 +74,16 @@ export default function Navbar() {
               </ul>
             </li> */}
             <li>
-              <Link to="/blog-full-width">会社<FiChevronDown /></Link>
-              <ul className="dropdown-menu-item">
+              <Link to="/blog-full-width"><FaQuestionCircle className="nav-li-icon" />お問い合わせ</Link>
+              {/* <ul className="dropdown-menu-item">
                 <li><Link to="/contact">contact</Link></li>
-                {/* <li><Link to="/about">about</Link></li> */}
-                {/* <li><Link to="/blog-full-width">full width </Link></li>
+                <li><Link to="/about">about</Link></li>
+                <li><Link to="/blog-full-width">full width </Link></li>
                 <li><Link to="/blog-grid">blog grid</Link></li>
                 <li><Link to="/blog-left-sidebar">left sidebar </Link></li>
                 <li><Link to="/blog-right-sidebar">right sidebar </Link></li>
-                <li><Link to="/blog-single">blog detail</Link></li> */}
-              </ul>
+                <li><Link to="/blog-single">blog detail</Link></li>
+              </ul> */}
             </li>
           </ul>
         </nav>
@@ -93,7 +93,7 @@ export default function Navbar() {
         <span className="menu__bar"></span>
         <span className="menu__bar"></span>
       </div>
-      <div className={navOpen ? 'side-nav-container active' : 'side-nav-container'}>
+      {/* <div className={navOpen ? 'side-nav-container active' : 'side-nav-container'}>
         <div className="humburger-menu">
           <div className="humburger-menu-lines side-menu-close" onClick={() => setNavOpen(!navOpen)}></div>
         </div>
@@ -163,7 +163,7 @@ export default function Navbar() {
             <Link to="/sign-up" className="theme-btn">Sign up</Link>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   )
 }

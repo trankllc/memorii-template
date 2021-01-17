@@ -1,74 +1,39 @@
-import React, {Component} from 'react'
-import  { FiSearch } from 'react-icons/fi'
-import SelectCountry from "../../common/SelectCountry";
+import React, {Component, useState} from 'react'
 import Select from "react-select";
+import { useDispatch, useSelector } from 'react-redux';
+import { districts, prefectures, trains } from './locations';
 
 
-const categories = [
-  {
-    value: 0,
-    label: 'Select a category'
-  },
-  {
-    value: 1,
-    label: 'All Category'
-  },
-  {
-    value: 2,
-    label: 'Shops'
-  },
-  {
-    value: 3,
-    label: 'Hotels'
-  },
-  {
-    value: 4,
-    label: 'Foods & Restaurants'
-  },
-  {
-    value: 5,
-    label: 'Fitness'
-  },
-  {
-    value: 6,
-    label: 'Travel'
-  },
-  {
-    value: 7,
-    label: 'Salons'
-  },
-  {
-    value: 8,
-    label: 'Event'
-  },
-  {
-    value: 9,
-    label: 'Business'
-  },
-  {
-    value: 10,
-    label: 'Jobs'
-  }
-]
+const BannerOneSearchInput = () => {
 
-export default class BannerOneSearchInput extends Component {
-  state = {
-    selectedCatOp: null,
+  const { prefecture,
+    district,
+    train } = useSelector(({ search }) => search);
+    const dispatch = useDispatch();
+
+    const [selectDistricts, setSelectDistricts] = useState(districts);
+    const [selectTrains, setSelectTrains] = useState(trains);
+
+  const handleChangePrefecture = (e) => {
+    dispatch({ type: "SELECT_PREFECTURE", payload: e });
+    setSelectDistricts(districts.filter(d => !d.prefecture || d.prefecture === e.value || e.value === 1));
+    setSelectTrains(trains.filter(d => !d.prefecture || d.prefecture === e.value || e.value === 1));
   }
 
-  handleChangeCat = () => {
-    const { selectedCatOp } = this.state;
-    this.setState(
-      { selectedCatOp }
-    );
+  const handleChangeDistrict = (e) => {
+    dispatch({ type: "SELECT_DISTRICT", payload: e });
   }
-  render() {
+
+  const handleChangeTrain = (e) => {
+    dispatch({ type: "SELECT_TRAIN", payload: e });
+  }
+
     return (
       <>
         <div className="main-search-input">
 
           <div className="main-search-input-item">
-            <div className="contact-form-action">
+            {/* <div className="contact-form-action">
               <form action="#">
                 <div className="form-group mb-0">
                 <span className="form-icon">
@@ -79,18 +44,30 @@ export default class BannerOneSearchInput extends Component {
                 </div>
               </form>
             </div>
+             */}
+             <Select
+              value={prefecture}
+              onChange={handleChangePrefecture}
+              placeholder="都道府県"
+              options={prefectures}
+            />
           </div>
 
           <div className="main-search-input-item location">
-            <SelectCountry />
+          <Select
+              value={district}
+              onChange={handleChangeDistrict}
+              placeholder="市区町村"
+              options={selectDistricts}
+            />
           </div>
 
           <div className="main-search-input-item category">
             <Select
-              value={this.selectedCatOp}
-              onChange={this.handleChangeCat}
-              placeholder="Select a Category"
-              options={categories}
+              value={train}
+              onChange={handleChangeTrain}
+              placeholder="路線"
+              options={selectTrains}
             />
           </div>
 
@@ -101,5 +78,6 @@ export default class BannerOneSearchInput extends Component {
         </div>
       </>
     )
-  }
 }
+
+export default BannerOneSearchInput;

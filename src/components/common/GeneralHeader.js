@@ -27,7 +27,7 @@ export default class GeneralHeader extends Component {
                   <div className="menu-full-width">
                     {/* Logo */}
                     <div className="logo">
-                      <Logo url={logosrc} />
+                      <Logo url={logosrc} className="logo-link" />
                     </div>
 
                     {/* Navbar */}

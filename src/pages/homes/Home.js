@@ -156,7 +156,7 @@ const Home = () => {
       </section> */}
 
       {/* Testimonial */}
-      <section className="testimonial-area padding-top-100px padding-bottom-100px text-center">
+      {/* <section className="testimonial-area padding-top-100px padding-bottom-100px text-center">
         {tmimages.tmimage.map((tmimg, index) => {
           return (
             <img key={index} src={tmimg.tmimg} alt="testimonial" className="random-img" />
@@ -172,7 +172,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <SectionDivider />
 
@@ -200,7 +200,7 @@ const Home = () => {
       </section> */}
 
       {/* Client Logo */}
-      <ClientLogo />
+      {/* <ClientLogo /> */}
 
       {/* NewsLetter */}
       {/* <NewsLetter /> */}
