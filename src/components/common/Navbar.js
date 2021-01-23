@@ -30,7 +30,7 @@ export default function Navbar() {
               </ul> */}
             </li>
             <li>
-              <Link to="/all-categories"><FaSearch className="nav-li-icon" />検索</Link>
+              <Link to="/list-left-sidebar"><FaSearch className="nav-li-icon" />検索</Link>
               {/* <ul className="dropdown-menu-item">
                 <li><Link to="/">home one</Link></li>
                 <li><Link to="/list-left-sidebar">left sidebar  </Link></li>

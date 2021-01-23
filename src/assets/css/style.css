@@ -1839,6 +1839,11 @@ body {
 }
 
 /*======= list-items ========*/
+.list-items {
+  display: flex;
+  flex-direction: column;
+}
+
 .list-items li {
   margin-bottom: 7px;
   font-weight: 500;
@@ -10203,8 +10208,8 @@ select,
 }
 
 .recent-item .recent-img img {
-  width: 90px;
-  height: 90px;
+  width: 60px;
+  height: 60px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -10238,6 +10243,13 @@ select,
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.recentpost-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .recent-item .recentpost-body .recent__link:hover {

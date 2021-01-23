@@ -56,7 +56,7 @@ class WidgetAuthor extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="info-list">
+                    {/* <div className="info-list">
                         <ul>
                             <li className="mb-2">
                                 <i className="la"><GiPositionMarker /></i> {this.state.address}
@@ -74,8 +74,8 @@ class WidgetAuthor extends Component {
                             </li>
                         </ul>
                     </div>
-                    <div className="section-block-2 margin-top-35px margin-bottom-35px"></div>
-                    <ul className="social-profile margin-bottom-35px text-center">
+                    <div className="section-block-2 margin-top-35px margin-bottom-35px"></div> */}
+                    {/* <ul className="social-profile margin-bottom-35px text-center">
 
                         {this.state.socials.map((item, index) => {
                             return (
@@ -88,7 +88,7 @@ class WidgetAuthor extends Component {
                                 </li>
                             )
                         })}
-                    </ul>
+                    </ul> */}
                     {/* <div className="btn-box text-center">
                         <Button text="view Profile" url="/user-profile" className="d-block">
                             <span className="d-inline-block"><AiOutlineUser /></span>

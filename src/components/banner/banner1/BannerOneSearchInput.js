@@ -2,6 +2,7 @@ import React, {Component, useState} from 'react'
 import Select from "react-select";
 import { useDispatch, useSelector } from 'react-redux';
 import { districts, prefectures, trains } from './locations';
+import { useHistory } from 'react-router-dom';
 
 
 const BannerOneSearchInput = () => {
@@ -10,6 +11,7 @@ const BannerOneSearchInput = () => {
     district,
     train } = useSelector(({ search }) => search);
     const dispatch = useDispatch();
+    const history = useHistory();
 
     const [selectDistricts, setSelectDistricts] = useState(districts);
     const [selectTrains, setSelectTrains] = useState(trains);
@@ -72,7 +74,7 @@ const BannerOneSearchInput = () => {
           </div>
 
           <div className="main-search-input-btn">
-            <button className="button theme-btn" type="submit">Search</button>
+            <button className="button theme-btn" onClick={() => history.push('/list-left-sidebar')} type="submit">検索</button>
           </div>
 
         </div>

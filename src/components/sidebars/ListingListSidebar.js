@@ -9,6 +9,7 @@ import WidgetFilterRatings from "./widgets/WidgetFilterRatings";
 import WidgetPostedBy from "./widgets/WidgetPostedBy";
 import Button from "../common/Button";
 import { BsChevronRight } from 'react-icons/bs'
+import WidgetFilterAccess from './widgets/WidgetFilterAccess';
 
 function ListingListSidebar() {
   return (
@@ -17,7 +18,7 @@ function ListingListSidebar() {
         <WidgetSearch />
         {/* <WidgetFilterCategory /> */}
         <WidgetFilterPrice />
-        <WidgetFilterPrice />
+        <WidgetFilterAccess />
         {/* 給料とアクセス */}
         <WidgetFilterTags />
         {/* <WidgetFilterFeatures /> */}
@@ -26,7 +27,7 @@ function ListingListSidebar() {
         {/* <WidgetPostedBy /> */}
         <div className="sidebar-widget">
           <div className="btn-box">
-            <Button text="apply filter" url="#" className="d-block w-100 text-center">
+            <Button text="検索フィルター" url="#" className="d-block w-100 text-center">
               <span className="d-inline-block"><BsChevronRight /></span>
             </Button>
           </div>

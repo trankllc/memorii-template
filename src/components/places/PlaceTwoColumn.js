@@ -16,207 +16,208 @@ import img7 from '../../assets/images/img29.jpg';
 import img8 from '../../assets/images/img30.jpg';
 import authorimg from '../../assets/images/small-team1.jpg';
 
-class PlaceTwoColumn extends Component {
-	state = {
-		items: [
-			{
-				// bedge: 'New Open',
-				title: '店舗名',
-				// titleIcon: <IoIosCheckmarkCircle />,
-				titleUrl: '/listing-details',
-				stitle: '住所',
-				image:img1,
-				cardType: 'Restaurant',
-				cardTypeIcon: <GiChickenOven />,
-				author: authorimg,
-				authorUrl: '#',
-				number: 'アクセス',
-				website: '給料',
-				date: 'www.mysitelink.com',
-				view: '204',
-				ratings: [
-					<IoMdStar />,
-					<IoMdStar />,
-					<IoMdStar />,
-					<IoMdStarHalf />,
-					<IoMdStar className="last-star" />,
-				],
-				ratingNum: '4.5'
-			},
-			{
-				// bedge: 'Closed',
-				title: '店舗名',
-				titleIcon: '',
-				titleUrl: '/listing-details',
-				stitle: '住所',
-				image: img2,
-				cardType: 'Travel',
-				cardTypeIcon: <RiPlaneLine />,
-				author: authorimg,
-				authorUrl: '#',
-				number: 'アクセス',
-				website: '給料',
-				date: 'www.mysitelink.com',
-				view: '248',
-				ratings: [
-					<IoMdStar />,
-					<IoMdStar />,
-					<IoMdStar />,
-					<IoMdStarHalf />,
-					<IoMdStar className="last-star" />,
-				],
-				ratingNum: '4.6'
-			},
-			{
-				// bedge: 'New Open',
-				title: '店舗名',
-				// titleIcon: <IoIosCheckmarkCircle />,
-				titleUrl: '/listing-details',
-				stitle: '住所',
-				image: img3,
-				cardType: 'Hotel',
-				cardTypeIcon: <RiHotelBedLine />,
-				author: authorimg,
-				authorUrl: '#',
-				number: 'アクセス',
-				website: '給料',
-				date: 'www.mysitelink.com',
-				view: '248',
-				ratings: [
-					<IoMdStar />,
-					<IoMdStar />,
-					<IoMdStar />,
-					<IoMdStarHalf />,
-					<IoMdStar className="last-star" />,
-				],
-				ratingNum: '4.6'
-			},
-			{
-				// bedge: 'New Open',
-				title: '店舗名',
-				// titleIcon: <IoIosCheckmarkCircle />,
-				titleUrl: '/listing-details',
-				stitle: '住所',
-				image: img4,
-				cardType: 'Restaurant',
-				cardTypeIcon: <GiChickenOven />,
-				author: authorimg,
-				authorUrl: '#',
-				number: 'アクセス',
-				website: '給料',
-				date: 'www.mysitelink.com',
-				view: '204',
-				ratings: [
-					<IoMdStar />,
-					<IoMdStar />,
-					<IoMdStar />,
-					<IoMdStarHalf />,
-					<IoMdStar className="last-star" />,
-				],
-				ratingNum: '4.5'
-			},
-			{
-				// bedge: 'Closed',
-				title: '店舗名',
-				titleIcon: '',
-				titleUrl: '/listing-details',
-				stitle: '住所',
-				image: img5,
-				cardType: 'Travel',
-				cardTypeIcon: <RiPlaneLine />,
-				author: authorimg,
-				authorUrl: '#',
-				number: 'アクセス',
-				website: '給料',
-				date: 'www.mysitelink.com',
-				view: '248',
-				ratings: [
-					<IoMdStar />,
-					<IoMdStar />,
-					<IoMdStar />,
-					<IoMdStarHalf />,
-					<IoMdStar className="last-star" />,
-				],
-				ratingNum: '4.6'
-			},
-			{
-				// bedge: 'New Open',
-				title: '店舗名',
-				// titleIcon: <IoIosCheckmarkCircle />,
-				titleUrl: '/listing-details',
-				stitle: '住所',
-				image: img6,
-				cardType: 'Hotel',
-				cardTypeIcon: <RiHotelBedLine />,
-				author: authorimg,
-				authorUrl: '#',
-				number: 'アクセス',
-				website: '給料',
-				date: 'www.mysitelink.com',
-				view: '248',
-				ratings: [
-					<IoMdStar />,
-					<IoMdStar />,
-					<IoMdStar />,
-					<IoMdStarHalf />,
-					<IoMdStar className="last-star" />,
-				],
-				ratingNum: '4.6'
-			},
-			{
-				// bedge: 'Closed',
-				title: '店舗名',
-				titleIcon: '',
-				titleUrl: '/listing-details',
-				stitle: '住所',
-				image: img7,
-				cardType: 'Travel',
-				cardTypeIcon: <RiPlaneLine />,
-				author: authorimg,
-				authorUrl: '#',
-				number: 'アクセス',
-				website: '給料',
-				date: 'www.mysitelink.com',
-				view: '248',
-				ratings: [
-					<IoMdStar />,
-					<IoMdStar />,
-					<IoMdStar />,
-					<IoMdStarHalf />,
-					<IoMdStar className="last-star" />,
-				],
-				ratingNum: '4.6'
-			},
-			{
-				// bedge: 'New Open',
-				title: '店舗名',
-				// titleIcon: <IoIosCheckmarkCircle />,
-				titleUrl: '/listing-details',
-				stitle: '住所',
-				image: img8,
-				cardType: 'Hotel',
-				cardTypeIcon: <RiHotelBedLine />,
-				author: authorimg,
-				authorUrl: '#',
-				number: 'アクセス',
-				website: '給料',
-				date: 'www.mysitelink.com',
-				view: '248',
-				ratings: [
-					<IoMdStar />,
-					<IoMdStar />,
-					<IoMdStar />,
-					<IoMdStarHalf />,
-					<IoMdStar className="last-star" />,
-				],
-				ratingNum: '4.6'
-			},
-		]
-	}
-	render() {
+
+const state = {
+	items: [
+		{
+			// bedge: 'New Open',
+			title: '店舗名',
+			// titleIcon: <IoIosCheckmarkCircle />,
+			titleUrl: '/listing-details',
+			stitle: '住所',
+			image:img1,
+			cardType: 'Restaurant',
+			cardTypeIcon: <GiChickenOven />,
+			author: authorimg,
+			authorUrl: '#',
+			number: 'アクセス',
+			website: '給料',
+			date: 'www.mysitelink.com',
+			view: '204',
+			ratings: [
+				<IoMdStar />,
+				<IoMdStar />,
+				<IoMdStar />,
+				<IoMdStarHalf />,
+				<IoMdStar className="last-star" />,
+			],
+			ratingNum: '4.5'
+		},
+		{
+			// bedge: 'Closed',
+			title: '店舗名',
+			titleIcon: '',
+			titleUrl: '/listing-details',
+			stitle: '住所',
+			image: img2,
+			cardType: 'Travel',
+			cardTypeIcon: <RiPlaneLine />,
+			author: authorimg,
+			authorUrl: '#',
+			number: 'アクセス',
+			website: '給料',
+			date: 'www.mysitelink.com',
+			view: '248',
+			ratings: [
+				<IoMdStar />,
+				<IoMdStar />,
+				<IoMdStar />,
+				<IoMdStarHalf />,
+				<IoMdStar className="last-star" />,
+			],
+			ratingNum: '4.6'
+		},
+		{
+			// bedge: 'New Open',
+			title: '店舗名',
+			// titleIcon: <IoIosCheckmarkCircle />,
+			titleUrl: '/listing-details',
+			stitle: '住所',
+			image: img3,
+			cardType: 'Hotel',
+			cardTypeIcon: <RiHotelBedLine />,
+			author: authorimg,
+			authorUrl: '#',
+			number: 'アクセス',
+			website: '給料',
+			date: 'www.mysitelink.com',
+			view: '248',
+			ratings: [
+				<IoMdStar />,
+				<IoMdStar />,
+				<IoMdStar />,
+				<IoMdStarHalf />,
+				<IoMdStar className="last-star" />,
+			],
+			ratingNum: '4.6'
+		},
+		{
+			// bedge: 'New Open',
+			title: '店舗名',
+			// titleIcon: <IoIosCheckmarkCircle />,
+			titleUrl: '/listing-details',
+			stitle: '住所',
+			image: img4,
+			cardType: 'Restaurant',
+			cardTypeIcon: <GiChickenOven />,
+			author: authorimg,
+			authorUrl: '#',
+			number: 'アクセス',
+			website: '給料',
+			date: 'www.mysitelink.com',
+			view: '204',
+			ratings: [
+				<IoMdStar />,
+				<IoMdStar />,
+				<IoMdStar />,
+				<IoMdStarHalf />,
+				<IoMdStar className="last-star" />,
+			],
+			ratingNum: '4.5'
+		},
+		{
+			// bedge: 'Closed',
+			title: '店舗名',
+			titleIcon: '',
+			titleUrl: '/listing-details',
+			stitle: '住所',
+			image: img5,
+			cardType: 'Travel',
+			cardTypeIcon: <RiPlaneLine />,
+			author: authorimg,
+			authorUrl: '#',
+			number: 'アクセス',
+			website: '給料',
+			date: 'www.mysitelink.com',
+			view: '248',
+			ratings: [
+				<IoMdStar />,
+				<IoMdStar />,
+				<IoMdStar />,
+				<IoMdStarHalf />,
+				<IoMdStar className="last-star" />,
+			],
+			ratingNum: '4.6'
+		},
+		{
+			// bedge: 'New Open',
+			title: '店舗名',
+			// titleIcon: <IoIosCheckmarkCircle />,
+			titleUrl: '/listing-details',
+			stitle: '住所',
+			image: img6,
+			cardType: 'Hotel',
+			cardTypeIcon: <RiHotelBedLine />,
+			author: authorimg,
+			authorUrl: '#',
+			number: 'アクセス',
+			website: '給料',
+			date: 'www.mysitelink.com',
+			view: '248',
+			ratings: [
+				<IoMdStar />,
+				<IoMdStar />,
+				<IoMdStar />,
+				<IoMdStarHalf />,
+				<IoMdStar className="last-star" />,
+			],
+			ratingNum: '4.6'
+		},
+		{
+			// bedge: 'Closed',
+			title: '店舗名',
+			titleIcon: '',
+			titleUrl: '/listing-details',
+			stitle: '住所',
+			image: img7,
+			cardType: 'Travel',
+			cardTypeIcon: <RiPlaneLine />,
+			author: authorimg,
+			authorUrl: '#',
+			number: 'アクセス',
+			website: '給料',
+			date: 'www.mysitelink.com',
+			view: '248',
+			ratings: [
+				<IoMdStar />,
+				<IoMdStar />,
+				<IoMdStar />,
+				<IoMdStarHalf />,
+				<IoMdStar className="last-star" />,
+			],
+			ratingNum: '4.6'
+		},
+		{
+			// bedge: 'New Open',
+			title: '店舗名',
+			// titleIcon: <IoIosCheckmarkCircle />,
+			titleUrl: '/listing-details',
+			stitle: '住所',
+			image: img8,
+			cardType: 'Hotel',
+			cardTypeIcon: <RiHotelBedLine />,
+			author: authorimg,
+			authorUrl: '#',
+			number: 'アクセス',
+			website: '給料',
+			date: 'www.mysitelink.com',
+			view: '248',
+			ratings: [
+				<IoMdStar />,
+				<IoMdStar />,
+				<IoMdStar />,
+				<IoMdStarHalf />,
+				<IoMdStar className="last-star" />,
+			],
+			ratingNum: '4.6'
+		},
+	]
+}
+
+const PlaceTwoColumn = () => {
 		return (
 			<>
-				{this.state.items.map((item, index) => {
+				{state.items.map((item, index) => {
 					return (
 						<div className="col-lg-6 column-td-6" key={index}>
 							<div className="card-item">
@@ -224,9 +225,9 @@ class PlaceTwoColumn extends Component {
 										<div className="card-image">
 											<img src={item.image} className="card__img" alt="Place" />
 											<span className={item.titleIcon ? 'badge': 'badge badge-closed' }>{item.bedge}</span>
-											<span className="badge-toggle" data-toggle="tooltip" data-placement="bottom" title="22 Likes">
+											{/* <span className="badge-toggle" data-toggle="tooltip" data-placement="bottom" title="22 Likes">
 												<FiHeart />
-											</span>
+											</span> */}
 										</div>
 									</Link>
 								<div className="card-content-wrap">
@@ -283,7 +284,6 @@ class PlaceTwoColumn extends Component {
 				})}
 			</>
 		);
-	}
 }
 
 export default PlaceTwoColumn;

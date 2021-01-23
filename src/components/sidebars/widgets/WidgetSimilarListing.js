@@ -3,75 +3,64 @@ import { BsEye } from 'react-icons/bs'
 import { MdStar, MdStarHalf } from 'react-icons/md'
 import Button from "../../common/Button";
 import {Link} from "react-router-dom";
-import img1 from '../../../assets/images/img34.jpg';
+import hairColorIcon from '../../../assets/images/hair-color.png';
 import img2 from '../../../assets/images/img35.jpg';
 import img3 from '../../../assets/images/img36.jpg';
 import img4 from '../../../assets/images/img37.jpg';
+import { FaCut } from 'react-icons/fa';
 
 class WidgetSimilarListing extends Component {
     state = {
-        title: 'Similar Listings',
+        title: 'メニュー',
         items: [
             {
-                img: img1,
-                title: 'The best sale marketer of the next year',
+                img: <FaCut fontSize={50} color="" />,
+                title: 'カラー&トリートメント',
                 titleUrl: '/blog-single',
                 price: '$19.00',
-                cat: 'Gym & Fitness',
+                cat: '',
                 catUrl: '#',
                 stars: [
-                    <MdStar />,
-                    <MdStar />,
-                    <MdStar />,
-                    <MdStar />,
-                    <MdStarHalf />,
+                    // <MdStar />,
+                    // <MdStar />,
+                    // <MdStar />,
+                    // <MdStar />,
+                    // <MdStarHalf />,
                 ]
             },
             {
-                img: img2,
-                title: 'How to make your ideas became true',
+                img: <img src={hairColorIcon} alt="" />,
+                title: 'カラー',
                 titleUrl: '/blog-single',
                 price: '$20.00',
-                cat: 'Restaurant',
+                cat: '',
                 catUrl: '#',
                 stars: [
-                    <MdStar />,
-                    <MdStar />,
-                    <MdStar />,
-                    <MdStar />,
-                    <MdStarHalf />,
+
                 ]
             },
-            {
-                img: img3,
-                title: 'What gets in the way of strategy',
-                titleUrl: '/blog-single',
-                price: '$19.00',
-                cat: 'Art & Design',
-                catUrl: '#',
-                stars: [
-                    <MdStar />,
-                    <MdStar />,
-                    <MdStar />,
-                    <MdStar />,
-                    <MdStarHalf />,
-                ]
-            },
-            {
-                img: img4,
-                title: 'What gets in the way of strategy',
-                titleUrl: '/blog-single',
-                price: '$19.00',
-                cat: 'Outdoors',
-                catUrl: '#',
-                stars: [
-                    <MdStar />,
-                    <MdStar />,
-                    <MdStar />,
-                    <MdStar />,
-                    <MdStarHalf />,
-                ]
-            },
+            // {
+            //     img: img3,
+            //     title: 'カラー',
+            //     titleUrl: '/blog-single',
+            //     price: '$19.00',
+            //     cat: '',
+            //     catUrl: '#',
+            //     stars: [
+
+            //     ]
+            // },
+            // {
+            //     img: img4,
+            //     title: 'カラー',
+            //     titleUrl: '/blog-single',
+            //     price: '$19.00',
+            //     cat: '',
+            //     catUrl: '#',
+            //     stars: [
+
+            //     ]
+            // },
         ]
     }
     render() {
@@ -89,7 +78,7 @@ class WidgetSimilarListing extends Component {
                                 <div className="recent-item" key={i}>
                                     <div className="recent-img">
                                         <Link to={item.titleUrl}>
-                                            <img src={item.img} alt="blog" />
+                                            {item.img}
                                         </Link>
                                     </div>
                                     <div className="recentpost-body">
@@ -114,11 +103,11 @@ class WidgetSimilarListing extends Component {
                         })}
 
                     </div>
-                    <div className="btn-box text-center padding-top-30px">
+                    {/* <div className="btn-box text-center padding-top-30px">
                         <Button text="see all listings" url="/listing-grid" className="d-block">
                             <BsEye />
                         </Button>
-                    </div>
+                    </div> */}
                 </div>
             </>
         );

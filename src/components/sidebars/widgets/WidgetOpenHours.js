@@ -2,39 +2,43 @@ import React, {Component} from 'react';
 
 class WidgetOpenHours extends Component {
     state = {
-        title: 'Opening Hours',
-        stitle: 'now open',
+        title: '営業時間',
         items: [
             {
-                day: 'Monday',
-                time: '9am - 5pm',
-                close: false,
-            },
-            {
-                day: 'Tuesday',
-                time: '9am - 5pm',
-                close: false,
-            },
-            {
-                day: 'Wednesday',
-                time: '9am - 5pm',
-                close: false,
-            },
-            {
-                day: 'Thursday',
-                time: '9am - 5pm',
-                close: false,
-            },
-            {
-                day: 'Friday',
-                time: '9am - 5pm',
-                close: false,
-            },
-            {
-                day: 'Sat-Sun',
-                time: 'Closed',
+                day: '日曜日',
+                time: '定休日',
                 close: true,
-            }
+            },
+            {
+                day: '月曜日',
+                time: '09:00 - 17:00',
+                close: false,
+            },
+            {
+                day: '火曜日',
+                time: '09:00 - 17:00',
+                close: false,
+            },
+            {
+                day: '水曜日',
+                time: '09:00 - 17:00',
+                close: false,
+            },
+            {
+                day: '木曜日',
+                time: '09:00 - 17:00',
+                close: false,
+            },
+            {
+                day: '金曜日',
+                time: '09:00 - 17:00',
+                close: false,
+            },
+            {
+                day: '土曜日',
+                time: '定休日',
+                close: true,
+            }            
         ]
     }
     render() {
@@ -49,9 +53,6 @@ class WidgetOpenHours extends Component {
                                 </h3>
                                 <div className="title-shape"></div>
                             </div>
-                            <p><span className="theme-btn button-success">
-                                {this.state.stitle}
-                            </span></p>
                         </div>
                         <ul className="list-items padding-top-30px">
                             {this.state.items.map((item, i) => {

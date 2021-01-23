@@ -144,7 +144,7 @@ class ListingDetailsBreadcrumb extends Component {
                                             </li>
                                         </ul> */}
                                     </div>
-                                    <div className="report-list-items">
+                                    {/* <div className="report-list-items">
                                         <ul className="listing-info">
                                             <li>
                                                 <a href="#review" className="theme-btn">
@@ -157,7 +157,7 @@ class ListingDetailsBreadcrumb extends Component {
                                                 </Link>
                                             </li>
                                         </ul>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>

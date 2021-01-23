@@ -6,50 +6,28 @@ class WidgetFilterTags extends Component {
 		tags: [
 			{
 				path: '#',
-				title: 'technology'
+				title: '社会保険'
 			},
 			{
 				path: '#',
-				title: 'fashion'
+				title: '交通費'
 			},
 			{
 				path: '#',
-				title: 'art'
+				title: '住宅手当'
 			},
 			{
 				path: '#',
-				title: 'design'
+				title: '子供手当'
 			},
 			{
 				path: '#',
-				title: 'food'
+				title: '社員旅行'
 			},
-			{
-				path: '#',
-				title: 'development'
-			},
-			{
-				path: '#',
-				title: 'marketing'
-			},
-			{
-				path: '#',
-				title: 'video'
-			},
-			{
-				path: '#',
-				title: 'music'
-			},
-			{
-				path: '#',
-				title: 'lifestyle'
-			},
-			{
-				path: '#',
-				title: 'adventure'
-			}
 		]
 	}
+
+
 	render() {
 		return (
 			<>

@@ -56,13 +56,13 @@ class GenericHeader extends Component {
     title: 'Showing 1 to 6 of 30 entries',
     navs: [
       {
-        path: '/listing-list',
-        icon: <BsListUl />,
+        path: '/listing-grid',
+        icon: <BsGrid />,
         active: false,
       },
       {
-        path: '/listing-grid',
-        icon: <BsGrid />,
+        path: '/list-left-sidebar',
+        icon: <BsListUl />,
         active: true,
       }
     ],
@@ -75,7 +75,9 @@ class GenericHeader extends Component {
       { selectedShortby }
     );
   }
+
   render() {
+
     return (
       <>
         <div className="generic-header margin-bottom-30px">
@@ -94,7 +96,7 @@ class GenericHeader extends Component {
             {this.state.navs.map((item, index) => {
               return (
                 <li key={index}>
-                  <Link to={item.path} className={ item.active ? 'active': ' '}>
+                  <Link to={item.path} className={ window.location.href.includes(item.path) ? 'active': ' '}>
                     <span className="d-inline-block">
                       {item.icon}
                     </span>

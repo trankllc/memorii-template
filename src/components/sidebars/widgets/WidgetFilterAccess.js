@@ -1,13 +1,13 @@
 import React, {Component } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-const WidgetFilterPrice = () => {
+const WidgetFilterAccess = () => {
 	const dispatch = useDispatch();
-	const { price, accessibility } = useSelector(({search}) => search);
+	const { accessibility } = useSelector(({search}) => search);
 
 	const Filterstate = {
-		title: '給料',
-		stitle: '月々',
+		title: 'アクセス',
+		stitle: '徒歩',
 	}
 		return (
 			<>
@@ -16,7 +16,7 @@ const WidgetFilterPrice = () => {
 						{Filterstate.title}
 					</h3>
 					<div className="multi-range">
-						<input id="max" type="range" min="15" max="25" step="1" value={price} onChange={(e) => dispatch({ type: "SET_PRICE", payload: e.target.value })} />
+						<input id="max" type="range" min="5" max="20" step="1" value={accessibility} onChange={(e) => dispatch({ type: "SET_ACCESSIBILITY", payload: e.target.value })} />
 					</div>
 					<div className="price-slider-amount d-flex">
 						<label htmlFor="amount" className="filter__label">
@@ -24,7 +24,7 @@ const WidgetFilterPrice = () => {
 						</label>
 						<div className="price-wrap d-flex">
 							<div className="price text-violet">
-								<span id="from">{price}万円</span><span> 〜 </span><span id="to">30万円</span>
+								<span id="from">0分</span><span> 〜 </span><span id="to">{accessibility}分</span>
 							</div>
 						</div>
 					</div>
@@ -33,4 +33,4 @@ const WidgetFilterPrice = () => {
 		);
 }
 
-export default WidgetFilterPrice;
+export default WidgetFilterAccess;

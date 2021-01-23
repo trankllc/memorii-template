@@ -29,7 +29,7 @@ class ListingDetailsSidebar extends Component {
 					{/* <WidgetBooking /> */}
 					<WidgetOpenHours />
 					{/* <WidgetCategory /> */}
-					<WidgetTags />
+					{/* <WidgetTags /> */}
 					<WidgetSimilarListing />
 					{/* <WidgetSubscribe /> */}
 					{/* <WidgetFollow /> */}

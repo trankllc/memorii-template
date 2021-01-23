@@ -3,6 +3,8 @@ const INIT_STATE = {
   district: "",
   train: "",
   searched: false,
+  price: 15,
+  accessibility: 20,
 };
 
 export default (state = INIT_STATE, action) => {
@@ -29,6 +31,18 @@ export default (state = INIT_STATE, action) => {
       return {
         ...state,
         searched: action.payload,
+      };
+    }
+    case "SET_PRICE": {
+      return {
+        ...state,
+        price: action.payload,
+      };
+    }
+    case "SET_ACCESSIBILITY": {
+      return {
+        ...state,
+        accessibility: action.payload,
       };
     }
     default:
